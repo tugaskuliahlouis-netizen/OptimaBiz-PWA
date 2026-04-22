@@ -1,0 +1,153 @@
+{
+  "id": "/",
+  "name": "OptimaBiz - Aksi Nyata, Bukan Teori",
+  "short_name": "OptimaBiz",
+  "description": "Real-Action Tool untuk UMKM. Kelola produk, analisis margin, dan dapatkan strategi AI untuk scale up profit bisnis kamu.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "tabbed",
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#1A1A1A",
+  "theme_color": "#FFC107",
+  "orientation": "portrait",
+  "lang": "id",
+  "dir": "ltr",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/icon-192x192-A.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512x512-B.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "icons/screenshot1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Dashboard OptimaBiz"
+    },
+    {
+      "src": "icons/screenshot2.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Analisis Margin Produk"
+    },
+    {
+      "src": "icons/screenshot1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "OptimaBiz Wide View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Lihat ringkasan bisnis kamu",
+      "url": "./index.html",
+      "icons": [
+        {
+          "src": "icons/icon-192x192-A.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "productivity",
+    "business",
+    "finance"
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+optimabiz",
+      "url": "./index.html?protocol=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./index.html",
+      "accept": {
+        "text/csv": [
+          ".csv"
+        ],
+        "application/vnd.ms-excel": [
+          ".xls",
+          ".xlsx"
+        ]
+      }
+    }
+  ],
+  "note_taking": {
+    "new_note_url": "./index.html?action=new-note"
+  },
+  "widgets": [
+    {
+      "name": "Dashboard Cuan",
+      "description": "Ringkasan cepat bisnis OptimaBiz kamu",
+      "tag": "optimabiz-dashboard",
+      "template": "widgets/dashboard.html",
+      "ms_ac_template": "widgets/dashboard.json",
+      "icon": "icons/icon-192x192-A.png",
+      "screenshots": [
+        {
+          "src": "icons/screenshot1.png",
+          "sizes": "1080x1920",
+          "label": "Widget Dashboard"
+        }
+      ],
+      "backgrounds": [
+        {
+          "src": "icons/icon-512x512-B.png",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.optimabiz.app",
+      "id": "com.optimabiz.app"
+    }
+  ],
+  "scope_extensions": [
+    {
+      "origin": "https://tugaskuliahlouis-netizen.github.io"
+    }
+  ]
+}
